@@ -5,8 +5,8 @@ class ForceSensor:
     def __init__(self,
                  port: str,
                  baud_rate: int = 921600,
-                 num_rows: int = 20,
-                 num_cols: int = 8,
+                 num_rows: int = 5,
+                 num_cols: int = 6,
                  timeout: float = 0.01):
         self.port=port
         self.num_rows = num_rows
@@ -64,3 +64,4 @@ class ForceSensor:
         直接返回最近一次缓存的 sensor 数据，不做新读取。
         """
         return self.data
+
